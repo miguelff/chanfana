@@ -18,8 +18,8 @@ openapi.registry.registerComponent(
   'securitySchemes',
   'BearerAuth',
   {
-    type: http,
-    scheme: bearer,
+    type: 'http',
+    scheme: 'bearer',
   },
 )
 ```
@@ -48,8 +48,8 @@ router.registry.registerComponent(
   'securitySchemes',
   'BearerAuth',
   {
-    type: http,
-    scheme: bearer,
+    type: 'http',
+    scheme: 'bearer',
   },
 )
 ```
@@ -76,7 +76,7 @@ export class ScanMetadataCreate extends OpenAPIRoute {
     },
     security: [
       {
-        bearerAuth: [],
+        BearerAuth: [],
       },
     ],
   }
